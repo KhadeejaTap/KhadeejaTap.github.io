@@ -1,26 +1,5 @@
-# Khadeeja Tapkirwala — Portfolio
+# Hi, I'm Khadeeja ðŸ‘‹
 
-Personal portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
+CS Dec '27 at the University of Houston.
 
-## Stack
-
-- **React 19** + **TypeScript**
-- **Vite** — build tool & dev server
-- **Tailwind CSS v4** — styling
-- **Framer Motion** — animations
-- **gh-pages** — deployment
-
-## Development
-
-```bash
-npm install
-npm run dev
-```
-
-## Deployment
-
-```bash
-npm run deploy
-```
-
-Builds the project and publishes to the `gh-pages` branch.
+Check out my portfolio: [khadeejatap.github.io](https://khadeejatap.github.io)
