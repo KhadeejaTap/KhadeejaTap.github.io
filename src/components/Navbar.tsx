@@ -35,7 +35,7 @@ export default function Navbar({ isDark, toggleDark }: NavbarProps) {
 
   return (
     <nav className="sticky top-0 z-50 bg-zinc-900 text-white shadow-md">
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="w-full px-8 lg:px-14 py-4 flex items-center justify-between">
         {/* Logo — full name, smaller weight */}
         <span className="font-medium text-sm tracking-wide">Khadeeja Tapkirwala</span>
 
