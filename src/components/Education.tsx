@@ -37,7 +37,7 @@ export default function Education() {
               Houston, TX · Expected May 2027
             </p>
             <div className="flex flex-wrap gap-2 mt-3">
-              {['Data Science', 'Machine Learning', 'Computer Vision', 'Algorithms', 'Software Engineering'].map((course) => (
+              {['Linear Algebra', 'Programming & Data Structures', 'Statistics', 'Data Management (HPE)', 'Intro to ML (HPE)'].map((course) => (
                 <span
                   key={course}
                   className="text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-700
