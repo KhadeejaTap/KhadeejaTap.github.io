@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Students for Refugees Website',
-    desc: 'SFR website designed and developed for the UH 2025 CodeJam. Designed end-to-end in Figma and built with HTML, CSS, and JavaScript.',
+    desc: '1st prize winning website designed and developed for the UH 2025 CodeJam. Designed end-to-end in Figma and built with HTML, CSS, and JavaScript.',
     image: '/prjct1.png',
     githubUrl: 'https://github.com/KhadeejaTap/UH-CodeJam-Team-1st-Place-Winner-2025',
     tags: ['Figma', 'HTML', 'CSS', 'JavaScript'],
