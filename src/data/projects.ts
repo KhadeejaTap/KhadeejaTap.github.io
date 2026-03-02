@@ -49,7 +49,7 @@ export const projects: Project[] = [
     desc: 'Real-time drowsiness detection personal project built using computer vision to identify facial fatigue symptoms.',
     embedUrl: 'https://go.screenpal.com/player/cT6lqnnbIAY?ff=1&title=0',
     githubUrl: 'https://github.com/KhadeejaTap/Driver-Drowsiness-Detection-System',
-    tags: ['Python', 'OpenCV', 'Computer Vision'],
+    tags: ['Python', 'OpenCV', 'MediaPipe'],
   },
   {
     id: 4,
