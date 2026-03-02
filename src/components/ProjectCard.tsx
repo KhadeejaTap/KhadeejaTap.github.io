@@ -39,11 +39,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           />
         </div>
       ) : project.image ? (
-        <img
-          src={project.image}
-          alt={`${project.title} screenshot`}
-          className="w-full h-48 object-cover"
-        />
+        <div className="relative w-full" style={{ paddingTop: '62.54%' }}>
+          <img
+            src={project.image}
+            alt={`${project.title} screenshot`}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
       ) : null}
 
       {/* Content */}
