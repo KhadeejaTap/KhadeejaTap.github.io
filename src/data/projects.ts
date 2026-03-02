@@ -30,7 +30,7 @@ export const projects: Project[] = [
     id: 3,
     title: 'Mindful Market',
     desc: 'Sustainability web app built for the CodeRed Astra 2025 Hackathon. Integrates Google Gemini to generate automated eco scores and carbon impact evaluations for products.',
-    image: '/mindfulmarket.jpg',
+    embedUrl: 'https://go.screenpal.com/player/cOenfwnZe7B?ff=1&title=0',
     githubUrl: 'https://github.com/KhadeejaTap/mindfulmarket',
     liveUrl: 'https://devpost.com/software/mindfulmarket',
     tags: ['React', 'TypeScript', 'Gemini API', 'Tailwind'],
@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Students for Refugees Website',
-    desc: 'SFR website designed and developed for the UH 2025 CodeJam. Designed end-to-end in Figma and built with HTML, CSS, and JavaScript.',
+    desc: '1st prize winning website designed and developed for the UH 2025 CodeJam. Designed end-to-end in Figma and built with HTML, CSS, and JavaScript.',
     image: '/prjct1.png',
     githubUrl: 'https://github.com/KhadeejaTap/UH-CodeJam-Team-1st-Place-Winner-2025',
     tags: ['Figma', 'HTML', 'CSS', 'JavaScript'],
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     desc: 'Real-time drowsiness detection personal project built using computer vision to identify facial fatigue symptoms.',
     embedUrl: 'https://go.screenpal.com/player/cT6lqnnbIAY?ff=1&title=0',
     githubUrl: 'https://github.com/KhadeejaTap/Driver-Drowsiness-Detection-System',
-    tags: ['Python', 'OpenCV', 'Computer Vision'],
+    tags: ['Python', 'OpenCV', 'MediaPipe'],
   },
   {
     id: 4,
