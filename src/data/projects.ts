@@ -30,7 +30,7 @@ export const projects: Project[] = [
     id: 3,
     title: 'Mindful Market',
     desc: 'Sustainability web app built for the CodeRed Astra 2025 Hackathon. Integrates Google Gemini to generate automated eco scores and carbon impact evaluations for products.',
-    image: '/mindfulmarket.jpg',
+    embedUrl: 'https://go.screenpal.com/player/cOenfwnZe7B?ff=1&title=0',
     githubUrl: 'https://github.com/KhadeejaTap/mindfulmarket',
     liveUrl: 'https://devpost.com/software/mindfulmarket',
     tags: ['React', 'TypeScript', 'Gemini API', 'Tailwind'],
