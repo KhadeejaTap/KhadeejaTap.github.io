@@ -59,7 +59,7 @@ export const projects: Project[] = [
     tags: ['Python', 'Pytorch', 'ML/AI'],
 	},
 	{
-    id: 5,
+    id: 6,
     title: 'Depth Refinement CNN',
     desc: 'Developed a depth-enhancement project inspired by research on combining ToF and RGB data, with the goal of creating more complete and accurate depth maps. This work supports improved performance in downstream computer vision tasks and provides a foundation for future research.',
     githubUrl: 'https://github.com/KhadeejaTap/RGBD--CNN',
