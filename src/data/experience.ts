@@ -37,9 +37,21 @@ export const experiences: ExperienceEntry[] = [
       "Lead executive operations and strategic planning for one of UH's prominent student organizations.",
       "Coordinate events, manage team communications, and represent the organization at university functions.",
     ],
+	},
+	{
+    id: 3,
+    role: 'Sales Representative & Operations Assistant',
+    org: 'Modest Essentials, LLC',
+    location: 'Stafford, TX',
+    period: 'Sep 2024 – Jan 2026',
+    type: 'Part-Time',
+    bullets: [
+      'Managed customer communications, inventory, fulfillment, and logistics while improving operational workflows.',
+      'Resolved customer issues, coordinated orders, and supported process improvements across daily operations.',
+    ],
   },
   {
-    id: 3,
+    id: 4,
     role: 'Lead Instructor / Administrator',
     org: 'Islamic Society of Greater Houston',
     location: 'Stafford, TX',
@@ -51,7 +63,7 @@ export const experiences: ExperienceEntry[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     role: 'Student Advisor Intern',
     org: 'Stride, Inc',
     location: 'Remote',
