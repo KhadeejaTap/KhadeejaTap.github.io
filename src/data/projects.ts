@@ -23,20 +23,6 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-	{
-    id: 1,
-    title: 'Depth Refinement ViT',
-    desc: 'Predict seamless, high-quality depth maps for downstream 3D vision applications by developing an RGBD fusion framework that leverages Vision Transformers (ViT) for super-resolution and error correction.',
-    githubUrl: 'https://github.com/KhadeejaTap/RGBD--ViT',
-    tags: ['Python', 'Pytorch', 'ML/AI'],
-	},
-	{
-    id: 6,
-    title: 'Depth Refinement CNN',
-    desc: 'Developed a depth-enhancement project inspired by research on combining ToF and RGB data, with the goal of creating more complete and accurate depth maps. This work supports improved performance in downstream computer vision tasks and provides a foundation for future research.',
-    githubUrl: 'https://github.com/KhadeejaTap/RGBD--CNN',
-    tags: ['Python', 'Pytorch', 'ML/AI'],
-  },
   {
     id: 4,
     title: 'Mindful Market',
@@ -64,5 +50,19 @@ export const projects: Project[] = [
     desc: 'A Tamagotchi-style virtual pet game class project where users can feed, play with, and care for their digital pet.',
     githubUrl: 'https://github.com/KhadeejaTap/Tamagotchi-Game',
     tags: ['C++', 'Object Oriented Programming'],
-	}
+	},
+	{
+    id: 1,
+    title: 'Depth Refinement ViT',
+    desc: 'Predict seamless, high-quality depth maps for downstream 3D vision applications by developing an RGBD fusion framework that leverages Vision Transformers (ViT) for super-resolution and error correction.',
+    githubUrl: 'https://github.com/KhadeejaTap/Vitthing',
+    tags: ['Python', 'Pytorch', 'ML/AI'],
+	},
+	{
+    id: 5,
+    title: 'Depth Refinement CNN',
+    desc: 'Predict seamless, high-quality depth maps for downstream 3D vision applications by developing an RGBD fusion framework that leverages Vision Transformers (ViT) for super-resolution and error correction.',
+    githubUrl: 'https://github.com/KhadeejaTap/Vitthing',
+    tags: ['Python', 'Pytorch', 'ML/AI'],
+  }
 ];
