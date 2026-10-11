@@ -67,8 +67,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <button
                 type="button"
                 onClick={() => setIsModalOpen(true)}
-                className="flex items-center gap-1.5 text-sm font-medium text-sky-600 dark:text-sky-400
-                           hover:underline cursor-pointer bg-transparent border-0 p-0"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-sky-600 dark:text-sky-400
+                           hover:underline cursor-pointer bg-transparent dark:bg-transparent border-0 p-0 m-0
+                           leading-normal font-sans shadow-none outline-none focus:outline-none"
               >
                 <FiPlay size={15} /> Watch Demo
               </button>
