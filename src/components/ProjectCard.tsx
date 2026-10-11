@@ -6,9 +6,21 @@ interface ProjectCardProps {
   project: Project;
 }
 
+function getEmbedUrl(url?: string): string | null {
+  if (!url) return null;
+  // Convert https://go.screenpal.com/watch/[id] to https://go.screenpal.com/player/[id]
+  const screenPalMatch = url.match(/go\.screenpal\.com\/(?:watch|player)\/([a-zA-Z0-9]+)/);
+  if (screenPalMatch) {
+    return `https://go.screenpal.com/player/${screenPalMatch[1]}`;
+  }
+  return null;
+}
+
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const embedUrl = getEmbedUrl(project.liveUrl);
+
   const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if ((e.target as HTMLElement).closest('a')) return;
+    if ((e.target as HTMLElement).closest('a, iframe')) return;
     window.open(project.githubUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -21,6 +33,20 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       whileHover={{ scale: 1.02 }}
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
     >
+      {/* Video Embed */}
+      {embedUrl && (
+        <div className="relative w-full aspect-video bg-zinc-900 border-b border-zinc-200 dark:border-zinc-700">
+          <iframe
+            src={embedUrl}
+            title={`${project.title} Demo`}
+            className="absolute inset-0 w-full h-full border-0"
+            allowFullScreen
+            scrolling="no"
+            allow="encrypted-media *;"
+          />
+        </div>
+      )}
+
       {/* Content */}
       <div className="flex flex-col flex-1 p-6 gap-3">
         <h3 className="text-lg font-semibold text-zinc-900 dark:text-white">{project.title}</h3>
