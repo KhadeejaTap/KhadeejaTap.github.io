@@ -21,7 +21,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
   const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if ((e.target as HTMLElement).closest('a, iframe')) return;
-    window.open(project.githubUrl, '_blank', 'noopener,noreferrer');
+    if (project.githubUrl) {
+      window.open(project.githubUrl, '_blank', 'noopener,noreferrer');
+    }
   };
 
   return (
@@ -71,15 +73,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
         {/* Links */}
         <div className="flex gap-3 mt-auto pt-1">
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm font-medium text-sky-600 dark:text-sky-400
-                       hover:underline"
-          >
-            <FiGithub size={15} /> Source Code
-          </a>
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-sm font-medium text-sky-600 dark:text-sky-400
+                         hover:underline"
+            >
+              <FiGithub size={15} /> Source Code
+            </a>
+          )}
           {project.liveUrl && (
             <a
               href={project.liveUrl}
